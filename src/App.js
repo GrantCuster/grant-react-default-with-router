@@ -4,10 +4,12 @@ import "./App.css";
 
 class App extends Component {
   render() {
+    const { AppState, setAppState } = this.props;
+    const { message } = AppState;
     return (
       <Provider>
         <Flex>
-          <Box>Focus on the process. Not the outcome.</Box>
+          <Box>{message}</Box>
         </Flex>
       </Provider>
     );
