@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import AppState from "./AppState";
-import registerServiceWorker from "./registerServiceWorker";
 
 const rootEl = document.getElementById("root");
 
@@ -24,5 +23,3 @@ if (module.hot) {
     );
   });
 }
-
-registerServiceWorker();
